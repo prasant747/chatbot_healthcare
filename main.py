@@ -29,7 +29,7 @@ llm = Ollama(
 
 rag_chain = RetrievalQA.from_chain_type(
     llm=llm,
-    chain_type="stuff",  # Simple concatenation of chunks
+    chain_type="stuff",  # Simple concatenation of chunk
     retriever=retriever,
     return_source_documents=True  # We want the source texts
 )
